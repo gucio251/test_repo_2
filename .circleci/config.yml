@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   deploy:
     docker:
@@ -24,10 +24,10 @@ jobs:
               --source ./src/ \
               --project $GCP_PROJECT
 workflows:
+  version: 2.1
   build-test-and-deploy:
     jobs:
       - deploy:
           filters:
             branches:
-              only:
-                - master
+              only: master
