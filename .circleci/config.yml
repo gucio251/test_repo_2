@@ -17,7 +17,7 @@ jobs:
             # Variables
             FUNCTION_NAME=circleci_deployment_example
             ENTRYPOINT=main
-            GCP_PROJECT=circleci-gcf-deployment
+            GCP_PROJECT='My First Project'
             # Deploy command
             gcloud functions deploy $FUNCTION_NAME \
               --entry-point $ENTRYPOINT \
